@@ -33,14 +33,14 @@ This format may vary based on command, but most will look somewhat similar.
 A useful command to know is the `man` command, which stands for "Manual". If you want to look up what a command does or what arguments can be passed in, then running `man command` will show you. Pressing "q" while in the manual will quit out of it. Eg. `man ls`
 
 ## Printing
-### `echo`
+### echo
 The `echo` command is used as a basic print statement. It can be used with a string or just a list of arguments:
 
 `echo "Hello Shell"`
 
 `echo Hello Shell`
 
-### `printf`
+### printf
 `printf` is also a printing command, but can format the output based on a pattern. The inputs are as follows:
 
 `printf [pattern] [args]`
@@ -62,7 +62,7 @@ The pattern prints for each argument given. Some patterns that it can match are 
 
 ## Navigation
 This section covers some commands for navigating the file system
-### `ls`
+### ls
 `ls` is a command that lists all of the files and directories at a specified location. By default, it will search at the current directory where it is run.
 
 Some options that `ls` can be run with are:
@@ -74,7 +74,7 @@ Some options that `ls` can be run with are:
 
 An additional, similar sommand is present: `l` which simply runs `ls -l`.
 
-### `cd`
+### cd
 `cd` stands for "Change Directory" and switches the current directory to a different one if the user has permission to do so. The path the is specified must be a directory, or else the command will fail.
 
 `cd ~/Documents/images`
@@ -83,17 +83,17 @@ An additional, similar sommand is present: `l` which simply runs `ls -l`.
 
 Running `cd` with no arguments will default to `cd ~` which changes the current directory to home.
 
-### `pwd`
+### pwd
 `pwd` stands for "Print Working Directory" and simply outputs whatever the current directory the user is in. 
 
-### `du`
+### du
 `du` stands for "Disk Usage" and outputs the amount of space a file or directory takes up. Simply running the command will show the usage of the files in the directory. A specific file can also be passed in to read the size of that file.
 
 `du`
 
 `du myfile.txt`
 
-### `find`
+### find
 `find` will print out all occurences of a pattern in files within a specific path. The general command looks like this:
 
 `find [path] -name "[pattern]"`
@@ -199,7 +199,7 @@ To uncompress a file, simply run `unzip` on a zip archive to uncompress it. Note
 
 `unzip myzip.zip`
 
-### `gzip` and `tar`
+### gzip and tar
 Another popular compression command is `gzip` with the extension ".gz". It only works on files and will produce the same amount of files as it is given with the extension ".gz".
 
 `gzip file.txt file2.txt` will compress into "file.txt.gz" and "file2.txt.gz".
@@ -256,14 +256,14 @@ File redirection is good for a way to output logs or get constant inputs in. To 
 `cat test.txt | ./myprogram`
 
 ## Text processing
-### `wc`
+### wc
 `wc`, or Word Count, is used to count characters, lines and words of a file. A specific combination of this can be enabled with the `-l` for line, `-c` for character, and `-w` for word options, but by default, all of them are on.
 
 `wc myfile.txt`
 
 `wc -wl myfile.txt`
 
-### `grep`
+### grep
 `grep` is used for searching for a word(s) in an input. This input is often piped in. It will output the word along with the line that it is found on.
 
 `cat test.txt | grep word`
@@ -272,7 +272,7 @@ File redirection is good for a way to output logs or get constant inputs in. To 
 ## Wildcards
 Sometimes we need for commands to take in arguments using a pattern rather than a specific file. This is where wildcards come into play. They can be substituted as part of an argument name to use all files that match that pattern.
 
-### `*`
+### *
 `*` is a wildcard that matches to everything in a pattern. Some examples:
 
 `rm *` will remove all files in the current directory.
@@ -281,12 +281,12 @@ Sometimes we need for commands to take in arguments using a pattern rather than 
 
 `find ~ -name "*.py"` will find all files extending with ".py"
 
-### `?`
+### ?
 `?` is a wildcard that matches to any one character.
 
 `rm main.?` will remove all files including main and a character, Eg. main.c, main.h, main.o, main.a.
 
-### `[]`
+### []
 
 `[]` will match any comma separated character or ranges specified in the brackets.
 
@@ -296,7 +296,7 @@ In addition a "!" can be the first character for a negative match. It will match
 
 `rm m[!a,e]n.c`.
 
-### `{}`
+### {}
 
 `{}` will match all patterns that are inside of the brackets.
 

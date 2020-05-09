@@ -11,7 +11,7 @@ There are two basic types of paths, **Absolute Paths**, and **Relative Paths**. 
 
 The following starting symbols correspond to absolute and relative paths:
 * `/`: The symbol to start with for an absolute path. Eg. `/home/username/Documents`
-* `.`: Represents the current folder for a relative path. Really only useful when running an executable in the same folder. Eg. `./a.out`. When referencing directories, it is never needed, and when using files in the current directory it isn't needed when passing arguments to a command. Eg. `python3 script.py`. Adding a "." won't break anything though. For example, if the user is in the *Documents* directory, the the can reference *images* simply by `images` or the image inside as `images/image.png`
+* `.`: Represents the current folder for a relative path. Really only useful when running an executable in the same folder or starting a command from the current folder. Eg. `./a.out`. When referencing directories, it is never needed, and when using files in the current directory it isn't needed when passing arguments to a command. Eg. `python3 script.py`. Adding a "." won't break anything though. For example, if the user is in the *Documents* directory, the the can reference *images* simply by `images` or the image inside as `images/image.png`
 * `..`: Represents the parent directory (the directory one above) for a relative path. Eg. `../images/image.png`. These can also be chained: `../../../images/image.png`
 * `~`: Represent the home directory for a relative path. Eg. `~/Documents/images/image.png`. This is also where a terminal will probably startup on a unix environment, although that is not always the case. On linux, the defualt is location of this is `/home/[username]`. On Mac it's at `/Users/[username]`.
 

@@ -1,2 +1,2 @@
 # ShellReference
-A reference guide for shell commands
+This repository serves as a startup guide and reference for unix commands.

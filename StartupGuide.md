@@ -1,23 +1,3 @@
-<style>
-    h1{
-        text-align:center;
-        color: #296EB4;
-        font-size:3em;
-    }
-
-    h2{
-        color:#5296A5;
-        font-size:2.25em;
-    }
-
-    h3{
-        color:#C18124;
-        font-size:1.75em
-    }
-
-
-</style>
-
 # Unix Terminal Guide
 
 ## Unix Paths

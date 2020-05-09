@@ -231,7 +231,7 @@ Streaming an input of data can be done using the `<` symbol. This will link the 
 
 Examples:
 
-`touch < filestomake.txt`
+`cat < filestomake.txt`
 
 `python3 myscript.py < input.txt`
 
@@ -243,6 +243,8 @@ Examples:
 `cat myfile.txt > results.txt`
 
 `./myprogram >> output.txt`
+
+`gzip < file.txt > file.txt.gz`
 
 A special place on the filesystem is `/dev/null`. It is a file that can be used for "discarding" outputs. If you redirect an output here, then it will simply not show up.
 

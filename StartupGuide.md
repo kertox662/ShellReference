@@ -7,7 +7,7 @@ The unix filesystem is a tree of directory which organize folders and files. Eac
 
 This path would reference an image in the images folder inside of Documents inside of the home directory.
 
-There are two basic types of paths, **Absolute Paths**, and **Relative Paths**. An absolute path always starts at the **root** directory, the highest folder in the system. This will find the exact file specified on the system. A relative path on the other hand would find a file or directory relative to where it is referenced from. The example above is reference the image relative to the home directory.
+There are two basic types of paths, **Absolute Paths**, and **Relative Paths**. An absolute path always starts at the **root** directory, the highest folder in the system. This will find the exact file specified on the system. A relative path on the other hand would find a file or directory relative to where it is referenced from. The example above is referencing the image relative to the home directory.
 
 The following starting symbols correspond to absolute and relative paths:
 * `/`: The symbol to start with for an absolute path. Eg. `/home/username/Documents`

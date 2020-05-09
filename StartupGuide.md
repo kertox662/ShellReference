@@ -187,8 +187,8 @@ To change the permissions, you can use the `chmod` command, meaning change mode.
 
 The second way is through a number. It is a three digit Octal number which in binary represents the pattern of modes. for example, 753 represents `rwxr-x-wx`. This is because 7 is rwx, 5 is r-x and 3 is -wx. Some common numbers are 755 and 644.
 
-### Compressing files
-## Basic Zipping
+## Compressing files
+### Basic Zipping
 `zip` takes a filename output and a list of files to compress. 
 
 `zip output file1, file2...`
